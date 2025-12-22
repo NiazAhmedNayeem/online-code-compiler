@@ -239,7 +239,7 @@
         // });
 
         var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
-            mode: 'javascript', // or language
+            mode: modeMap[language] || 'python',
             theme: 'dracula',
             lineNumbers: true,
             tabSize: 4,
@@ -256,7 +256,7 @@
             if (language === 'html') {
                 var iframe = document.createElement('iframe');
                 iframe.style.width = "100%";
-                iframe.style.height = "600px";
+                iframe.style.height = "800px";
                 iframe.srcdoc = code;
                 output.appendChild(iframe);
                 return;
