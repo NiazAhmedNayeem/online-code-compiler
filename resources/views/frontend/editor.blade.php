@@ -159,7 +159,6 @@
         <!-- Main Content -->
 
         <div class="container-fluid vh-100 d-flex flex-column p-3">
-            {{-- <h4 class="mb-3 text-center">{{ ucfirst($language) }} Editor</h4> --}}
 
             <div class="row flex-grow-1 g-3 h-100">
                 <!-- Editor -->
@@ -186,9 +185,7 @@
 
                 <!-- Output -->
                 <div class="col-md-5 d-flex flex-column h-100">
-
                     <div class="card shadow-sm flex-grow-1 d-flex flex-column">
-
                         <div class="card-body d-flex flex-column p-3 flex-grow-1">
                             <div class="mb-3 mt-2">
                                 <h5 class="fw-bold mb-3 mt-1"><i class="fas fa-terminal me-2"></i>User Input (stdin)
@@ -202,6 +199,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
